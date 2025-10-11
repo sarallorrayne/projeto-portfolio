@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>NOIR - Minimalismo nunca sai da moda</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div id="logo">
+        <nav id="header">
+            <div id="container">
                 <a href="#">
                     <img src="images/noir-logo.png" alt="Logo da loja escrita 'Noir'" width="100px">
                 </a>
-            </div>
-            <div id="header-itens">
                 <ul>
                     <li>Home</li>
                     <li>Produtos</li>
@@ -28,12 +26,14 @@
 
     <main>
         <div id="hero-section">
-            <p>Sinta a liberdade de
-                <br>
-                vestir o essencial.
-            </p>
-            <a href="produtos.html">Ver Coleção</a>
-            <img src="images/hero-section.jpg" alt="Modelo vestindo um vestido midi preto" width="15%">
+            <div class="hero-content">
+                <h1>Sinta a liberdade de vestir o essencial.
+                </h1>
+                <div class="hero-button">
+                    <a href="produtos.html">Ver Coleção</a>
+                </div>
+            </div>
+            <img src="images/hero-section.jpg" alt="Modelo vestindo um vestido midi preto">
         </div>
 
         <div id="manifest">
@@ -43,15 +43,43 @@
             </p>
         </div>
 
-        <div id="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/vestido.jpg" alt="Modelo com o vestido reto preto Noir Chiq" width="15%"></div>
-            <div class="swiper-slide"><img src="images/regata.jpg" alt="Modelo com a regata preta feminina Noir Casual" width="15%"></div>
-            <div class="swiper-slide"><img src="images/blazer.jpg" alt="Modelo com blazer feminino preto Noir Corporative" width="15%"></div>
-            <div class="swiper-slide"><img src="images/vestido-verde.jpg" alt="Modelo com vestido reto verde menta Noir Chiq" width="15%"></div>
-            <!-- <div class="swiper-slide"><img src="#" alt=""></div>
-            <div class="swiper-slide"><img src="#" alt=""></div> -->
-            </div>
+        <div id="carousel-title">
+            <h2>Últimos Lançamentos</h2>
         </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <figure>
+                        <img src="images/vestido.jpg" alt="Modelo com o vestido reto preto Noir Chiq">
+                        <figcaption>Vestido Noir Chiq</figcaption>
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>
+                        <img src="images/regata.jpg" alt="Modelo com a regata preta feminina Noir Casual">
+                        <figcaption>Regata Noir Casual</figcaption>
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>
+                        <img src="images/blazer.jpg" alt="Modelo com blazer feminino preto Noir Corporative">
+                        <figcaption>Blazer Noir Corporative</figcaption>
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>
+                        <img src="images/vestido-verde.jpg" alt="Modelo com vestido reto verde menta Noir Chiq">
+                        <figcaption>Vestido Verde Noir Chiq</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- Botões e paginação -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
 
         <div id="values">
             <div><img src="" alt="Logo Qualidade">Qualidade</div>
@@ -64,5 +92,22 @@
             <a href="">Explore a Coleção</a>
         </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    </script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+header {
+    background-color: #EAEAEA;
+    padding: 2em;
+}
+
+#container {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+#container li {
+    cursor: pointer;
+    list-style-type: none;
+}

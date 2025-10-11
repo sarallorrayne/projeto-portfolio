@@ -1,0 +1,15 @@
+@import url('header.css');
+@import url('hero-section.css');
+@import url('manifest.css');
+@import url('releases.css');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --cor-de-fundo: linear-gradient(to bottom, #EAEAEA, #DBDBDB);
+    --fonte-principal: 'Playfair Display', serif;
+}
+
+body {
+    background-image: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+}

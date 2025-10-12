@@ -16,16 +16,16 @@
                     <img src="images/noir-logo.png" alt="Logo da loja escrita 'Noir'" width="100px">
                 </a>
                 <ul>
-                    <li>Home</li>
-                    <li>Produtos</li>
-                    <li>Sobre Nós</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">Produtos</a></li>
+                    <li><a href="about_us.html">Sobre Nós</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <div id="hero-section">
+        <section id="hero-section">
             <div class="hero-content">
                 <h1>Sinta a liberdade de vestir o essencial.
                 </h1>
@@ -34,19 +34,19 @@
                 </div>
             </div>
             <img src="images/hero-section.jpg" alt="Modelo vestindo um vestido midi preto">
-        </div>
+        </section>
 
-        <div id="manifest">
+        <section id="manifest">
             <p>Vestir-se não é sobre mostrar, é sobre sentir.
                 <br>
                 Cada peça NOIR é um convite à pausa, ao olhar interior.
             </p>
-        </div>
+        </section>
 
-        <div id="carousel-title">
-            <h2>Últimos Lançamentos</h2>
-        </div>
-        <div class="swiper">
+        <section class="swiper">
+            <div id="carousel-title">
+                <h2>Últimos Lançamentos</h2>
+            </div>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <figure>
@@ -74,31 +74,40 @@
                 </div>
             </div>
 
-            <!-- Botões e paginação -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-pagination"></div>
-        </div>
+        </section>
 
-
-        <div id="values">
-            <div><img src="" alt="Logo Qualidade">Qualidade</div>
-            <div><img src="" alt="Logo Conforto">Conforto</div>
-            <div><img src="" alt="Logo Sustentabilidade">Sustentabilidade</div>
-        </div>
-
-        <div id="call-to-action">
-            <p>Descubra o poder do simples.</p>
+        <div id="collection">
             <a href="">Explore a Coleção</a>
         </div>
     </main>
+    
+    <footer>
+        <div id="call-to-action">
+            <p>Descubra o poder do simples.</p>
+            <p>NOIR®</p>
+        </div>
+        <div id="container-footer">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">Produtos</a></li>
+                <li><a href="about_us.html">Sobre Nós</a></li>
+            </ul>
+        </div>
+        <div id="creator">
+            <p>Página criada por <a href="https://www.linkedin.com/in/souza-sara/">Sara Souza</a></p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
     const swiper = new Swiper('.swiper', {
-        slidesPerView: 1,
-        spaceBetween: 30,
+        slidesPerView: 3,
+        spaceBetween: 10,
         loop: true,
+        grabCursor: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,

@@ -1,7 +1,9 @@
 @import url('header.css');
 @import url('hero-section.css');
 @import url('manifest.css');
-@import url('releases.css');
+@import url('carousel.css');
+@import url('about-us-values.css');
+@import url('about-us.css');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
@@ -12,4 +14,60 @@
 body {
     background-image: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
+}
+
+#collection {
+    font-family: 'Didact Gothic', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+
+#collection a {
+    font-size: 1.5em;
+    color: #1f1f1f;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #ADA996, #c5c1ab);
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+footer {
+    background: linear-gradient(to left,#111, #2c2c2c, #3a3a3a );
+    padding: 2em;
+    text-align: center;
+    gap: 2em;
+}
+
+footer p {
+    color: #DBDBDB;
+}
+
+#container-footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+}
+
+#container-footer li {
+    text-decoration: none;
+    color: #ADA996;
+}
+
+#container-footer a {
+    color: #ADA996;
+    text-decoration: none;
+}
+
+#creator  {
+    opacity: 0.6;
+    font-size: .8em;
+}
+
+#creator a {
+    color: #ADA996;
+    text-decoration: none;
 }

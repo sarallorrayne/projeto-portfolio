@@ -1,6 +1,6 @@
 header {
     background-color: #EAEAEA;
-    padding: 2em;
+    padding: 1em;
 }
 
 #container {
@@ -18,7 +18,9 @@ header {
     gap: 2em;
 }
 
-#container li {
+#container li a {
     cursor: pointer;
     list-style-type: none;
+    text-decoration: none;
+    color: #000;
 }

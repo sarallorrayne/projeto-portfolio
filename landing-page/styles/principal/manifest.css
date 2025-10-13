@@ -1,0 +1,9 @@
+#manifest {
+    font-family: var(--fonte-body);
+    font-size: 2em;
+    margin: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

@@ -17,7 +17,7 @@
                 </a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about_us.html">Produtos</a></li>
+                    <li><a href="products.html">Produtos</a></li>
                     <li><a href="about_us.html">Sobre Nós</a></li>
                 </ul>
             </div>
@@ -44,32 +44,32 @@
         </section>
 
         <section class="swiper">
-            <div id="carousel-title">
+            <div class="carousel-title">
                 <h2>Últimos Lançamentos</h2>
             </div>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <figure>
-                        <img src="images/vestido.jpg" alt="Modelo com o vestido reto preto Noir Chiq">
-                        <figcaption>Vestido Noir Chiq</figcaption>
+                        <img src="images/collection/vestido-noir-chic-preto.jpg" alt="Modelo com o vestido reto preto Noir Chic">
+                        <figcaption>Vestido Noir Chic</figcaption>
                     </figure>
                 </div>
                 <div class="swiper-slide">
                     <figure>
-                        <img src="images/regata.jpg" alt="Modelo com a regata preta feminina Noir Casual">
+                        <img src="images/collection/regata.jpg" alt="Modelo com a regata preta feminina Noir Casual">
                         <figcaption>Regata Noir Casual</figcaption>
                     </figure>
                 </div>
                 <div class="swiper-slide">
                     <figure>
-                        <img src="images/blazer.jpg" alt="Modelo com blazer feminino preto Noir Corporative">
+                        <img src="images/collection/blazer-corporative.jpg" alt="Modelo com blazer feminino preto Noir Corporative">
                         <figcaption>Blazer Noir Corporative</figcaption>
                     </figure>
                 </div>
                 <div class="swiper-slide">
                     <figure>
-                        <img src="images/vestido-verde.jpg" alt="Modelo com vestido reto verde menta Noir Chiq">
-                        <figcaption>Vestido Verde Noir Chiq</figcaption>
+                        <img src="images/collection/vestido-verde-noir-chic.jpg" alt="Modelo com vestido reto verde menta Noir Chic">
+                        <figcaption>Vestido Verde Noir Chic</figcaption>
                     </figure>
                 </div>
             </div>
@@ -92,31 +92,17 @@
         <div id="container-footer">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about_us.html">Produtos</a></li>
+                <li><a href="products.html">Produtos</a></li>
                 <li><a href="about_us.html">Sobre Nós</a></li>
             </ul>
         </div>
         <div id="creator">
-            <p>Página criada por <a href="https://www.linkedin.com/in/souza-sara/">Sara Souza</a></p>
+            <p>Página criada por <a href="https://www.linkedin.com/in/souza-sara/" target="_blank">Sara Souza</a></p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-    const swiper = new Swiper('.swiper', {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        loop: true,
-        grabCursor: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-    </script>
+    <script src="script-carousel.js"></script>
+
 </body>
 </html>

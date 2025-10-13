@@ -1,0 +1,26 @@
+#collection-title {
+    background-image: linear-gradient(to right, #2c2c2c, #000, #000);
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+#collection-title h1 {
+    font-size: 3em;
+    font-family: var(--fonte-title);
+    color: #DBDBDB;
+    margin: 1em;
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#collection-title img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}

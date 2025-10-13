@@ -1,0 +1,38 @@
+footer {
+    background: var(--cor-hero-section);
+    padding: 2em;
+    text-align: center;
+    gap: 2em;
+}
+
+footer p {
+    color: #DBDBDB;
+}
+
+#container-footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+}
+
+#container-footer li {
+    text-decoration: none;
+    color: #ADA996;
+}
+
+#container-footer a {
+    color: #ADA996;
+    text-decoration: none;
+}
+
+#creator  {
+    opacity: 0.6;
+    font-size: .8em;
+}
+
+#creator a {
+    color: #ADA996;
+    text-decoration: none;
+}

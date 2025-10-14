@@ -1,0 +1,30 @@
+@import url('landing/hero-section.css');
+
+/* :root {
+
+} */
+
+/* body {
+
+} */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#logo img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

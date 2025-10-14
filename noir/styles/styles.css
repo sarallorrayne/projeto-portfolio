@@ -14,7 +14,7 @@
     --fonte-body: 'Playfair Display', serif;
     --fonte-title: 'Didact Gothic', serif;
     --cor-button: linear-gradient(to right, #ADA996, #c5c1ab);
-    --cor-hero-section: linear-gradient(to left,#111, #2c2c2c, #3a3a3a);
+    --cor-hero-section: linear-gradient(to right,#2c2c2c, #070707, #070707);
     --cor-about-us: linear-gradient(to right, #2c2c2c, #000, #000);
 }
 
@@ -23,12 +23,28 @@ body {
     font-family: var(--fonte-body);
 }
 
+h1 {
+    font-weight: 400;
+}
+
+h1 strong {
+    font-weight: 800;
+    background: var(--cor-button);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h2 {
+    font-family: var(--fonte-body);
+}
+
 #collection {
     font-family: var(--fonte-title);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5em;
+    padding: 2em 0 4em 0;
 }
 
 #collection a {

@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     display: block;
-    box-shadow: -20px 0 40px rgba(26, 26, 26, 0.9);
+    box-shadow: -20px 0 40px #070700e6;
 }
 
 .hero-content {
@@ -34,7 +34,7 @@
 }
 
 .hero-content a {
-    font-size: 41px;
+    font-size: 0.75em;
     text-decoration: none;
     color: #1f1f1f;
     background-image: linear-gradient(to right, #ADA996, #c5c1ab);

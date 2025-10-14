@@ -1,4 +1,4 @@
-#manifest-about-us {
+#hero-section-about-us {
     background: var(--cor-about-us);
     height: 90vh;
     display: flex;
@@ -8,15 +8,15 @@
     gap: 1em;
 }
 
-.manifest-text {
+.hero-section-text {
     color: #DBDBDB;
     font-family: 'Didact Gothic', serif;
-    font-size: 2em;
+    font-size: 3em;
     padding-left: 4em;
     line-height: 1.6;
 }
 
-#manifest-img img {
+#hero-section-img img {
     height: 100vh;
     margin: 0;
     padding: 0;

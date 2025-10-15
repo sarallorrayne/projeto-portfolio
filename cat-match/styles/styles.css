@@ -1,21 +1,28 @@
-@import url('landing/hero-section.css');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('landing/hero-section.css');
+@import url('match/match.css');
 
-/* :root {
-
-} */
+:root {
+    --background-hero-section: linear-gradient(to right, #B3541E,#FF6B35, #f17633, #FF6B35, #B3541E);
+    --background-botao: linear-gradient(-35deg, #0A3D62, #0F3D3E);
+    --fonte-principal: "Raleway", sans-serif;
+    --cor-fonte-principal: #0A3D62;
+    --sombreado: 20px 0 40px rgba(69, 69, 69, 0.5);
+}
 
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
     box-sizing: border-box;
 }
 
+#main-landing {
+    overflow: hidden;
+}
+
 h1 {
-    font-size: 3rem;
-    font-family: "Raleway", sans-serif;
+    font-family: var(--fonte-principal);
 }
 
 header {

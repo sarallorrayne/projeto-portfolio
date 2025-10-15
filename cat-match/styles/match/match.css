@@ -1,0 +1,40 @@
+body, #main-match {
+    height: 100vh;
+    overflow: visible;
+    background-image: var(--background-botao);
+}
+
+#conheca-nossos-gatinhos {
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    color: #f17633;
+
+    margin: 1rem;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    box-sizing: border-box;
+}
+
+.swiper-slide {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 300px;
+
+    border-radius: 10%;
+    box-shadow: var(--sombreado);
+}

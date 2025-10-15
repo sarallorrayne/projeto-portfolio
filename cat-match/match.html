@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v7.1.0/css/all.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>CatMatch - Adote um Gatinho</title>
 </head>
 <body>
@@ -15,11 +17,9 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <div>
+    <main id="main-match">
+        <section id="conheca-nossos-gatinhos">
                 <h1>Conheça nossos gatinhos <i class="fa-duotone fa-solid fa-cat"></i></h1>
-            </div>
         </section>
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -40,6 +40,8 @@
                             </div>
                         </figcaption>
                     </figure>
+                </div>
+                <div class="swiper-slide">
                     <figure>
                         <img src="img/gatos-adocao/gata-aurora.jpg" alt="Gata Tricolor">
                         <figcaption>
@@ -75,7 +77,7 @@
                 </div>
                 <div class="swiper-slide">
                     <figure>
-                        <img src="img/gatos-adocao/gata-esmeralda.jpg" alt="Gata Trigrada com Branco">
+                        <img src="img/gatos-adocao/gato-fantasma-da-opera.jpg" alt="Gato Frajola">
                         <figcaption>
                             <ul>
                                 <li>Nome:</li>
@@ -136,5 +138,8 @@
             <div class="swiper-scrollbar"></div>
             </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
 </body>
 </html>

@@ -1,72 +1,78 @@
+
+
 #hero-section {
-    background: linear-gradient(35deg, #f17633, #FF6B35, #B3541E);
+    background: var(--background-hero-section);
     height: calc(100vh - 80px);
-    padding-left: 4rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
     overflow: hidden;
 }
 
 .hero-section-conteudo {
-    color: #0A3D62;
-    text-align: left;
-    flex: 1;
+    color: var(--cor-fonte-principal);
+    font-size: 1.5rem;
+
     padding-right: 2rem;
+    min-width: 40%;
+    margin: 2.5rem;
+
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .hero-section-conteudo a {
+    background-image: var(--background-botao);
+    border-radius: 35% 1%;
+    box-shadow: var(--sombreado);
+
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    text-decoration: none;
     color: #F5E9DA;
+
     margin-top: 2rem;
     padding: 1.5rem;
-    font-size: 1.5rem;
-    background-image: linear-gradient(to right, #0F3D3E, #1C5A5B);
-    border-radius: 35% 1%;
 }
+
+/* .hero-section-conteudo a:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+} */
 
 #hero-section img {
     width: 30%;
     min-width: 170px;
 
-    background-color: #ff6733;
+    background-color: #0A3D62;
     padding: 1%;
     margin: 0;
     border-radius: 50%;
-    box-shadow: 20px 0 40px rgba(69, 69, 69, 0.5);
+    box-shadow: var(--sombreado);
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-}
-
-.hero-section-imagens {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 0.8%;
-    padding: 6rem;
-    min-height: 100vh;
 }
 
 .conjunto-imagens {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex: 1 1;
+    gap: 5rem;
 }
 
-.hero-section-imagens .conjunto-imagens:nth-child(odd){
+#hero-section-imagens-esquerda .conjunto-imagens:nth-child(odd),
+#hero-section-imagens-direita .conjunto-imagens:nth-child(even) {
     transform: translateX(-25%);
 }
 
-.hero-section-imagens .conjunto-imagens:nth-child(even) {
+#hero-section-imagens-esquerda .conjunto-imagens:nth-child(even),
+#hero-section-imagens-direita .conjunto-imagens:nth-child(odd) {
     transform: translateX(8%);
 }

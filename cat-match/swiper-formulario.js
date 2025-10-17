@@ -2,8 +2,8 @@ window.addEventListener("load", () => {
   const swiper = new Swiper(".swiper", {
     loop: true,
     slidesPerView: 1,
-    grabCursor: false,
-    allowTouchMove: false,
+    grabCursor: true,
+    allowTouchMove: true,
     speed: 1000,
     breakpoints: {
       768: { slidesPerView: 1 },

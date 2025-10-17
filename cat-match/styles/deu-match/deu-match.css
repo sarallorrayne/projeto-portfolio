@@ -1,0 +1,59 @@
+html #body-deu-match {
+    background-image: var(--background-botao);
+}
+
+#main-deu-match {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#figure-deu-match {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#figure-deu-match svg {
+    width: 60%;
+    fill: #e63946;
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
+    animation: pulse 1s infinite;
+    animation-direction: alternate;
+}
+
+#caption-deu-match {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FF6B35;
+}
+
+figure .botao {  
+    background-image: linear-gradient(to right, #FF6B35, #f17633, #FF6B35);
+    border-radius: 35% 1%;
+    box-shadow: var(--sombreado);
+
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #F5E9DA;
+
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -webkit-filter: brightness(100%);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    -webkit-filter: brightness(110%);
+  }
+}

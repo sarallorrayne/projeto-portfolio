@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v7.1.0/css/all.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="swiper.js">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>CatMatch - Adote um Gatinho</title>
 </head>
 <body>
@@ -49,17 +50,20 @@
             <h2>Ambiente e Rotina</h2>
             <div>
                 <label for="moradia">Você mora em casa ou apartamento</label>
-                <input type="radio" name="moradia" id="moradia">
+                <input type="radio" name="moradia" id="moradia" value="casa">Casa
+                <input type="radio" name="moradia" id="moradia" value="apartamento">Apartamento
             </div>
             <div>
                 <label for="protecao">O ambiente é telado/protegido?</label>
-                <input type="radio" name="protecao" id="protecao">
+                <input type="radio" name="protecao" id="protecao" value="sim">Sim
+                <input type="radio" name="protecao" id="protecao" value="nao">Não
             </div>
             <div>
                 <label for="animais">Tem outros animais?</label>
-                <input type="radio" name="animais" id="animais">
-            <!-- </div>
-            <div> -->
+                <input type="radio" name="animais" id="animais" value="sim">Sim
+                <input type="radio" name="animais" id="animais" value="nao">Não
+            </div>
+            <div>
                 <label for="animais-tipo">Se sim, quais?</label>
                 <input type="text" name="animais-tipo" id="animais-tipo">
             </div>
@@ -76,7 +80,8 @@
             </div>
             <div>
                 <label for="teve-animais">Você já teve gatos antes?</label>
-                <input type="radio" name="teve-animais" id="teve-animais">
+                <input type="radio" name="teve-animais" id="teve-animais" value="sim">Sim
+                <input type="radio" name="teve-animais" id="teve-animais" value="nao">Não
             </div>
 
             <h2>Como descreveria seu estilo de vida?</h2>
@@ -88,15 +93,6 @@
                     <div class="swiper-slide">Ativo e brincalhão 🐾</div>
                     <div class="swiper-slide">Um pouco dos dois 💤</div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
                 </div>
 
                 <button>Enviar meu Match 💌</button>
@@ -108,5 +104,8 @@
             Nossa equipe vai entrar em contato para continuar esse match de amor!</p>
         </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper-formulario.js"></script>
 </body>
 </html>

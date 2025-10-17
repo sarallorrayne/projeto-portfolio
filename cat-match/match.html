@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v7.1.0/css/all.css">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>CatMatch - Adote um Gatinho</title>
 </head>
 <body>
-    <header>
+    <header id="header-match">
         <nav id="logo">
             <a href="#">
                 <img src="img/cat-match-logo.png" alt="Logo CatMatch">
@@ -25,24 +26,29 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <figure>
+                    <figure id="figure-match">
                         <img src="img/gatos-adocao/gata-ametista.jpg" alt="Gata Tigrada com Branco">
                         <figcaption>
-                            <ul>
-                                <li>Nome:</li>
-                                <li>Cor:</li>
-                                <li>Idade:</li>
-                                <li>Personalidade:</li>
-                            </ul>
-                            <div>
-                                <i class="fa-solid fa-heart"></i>
-                                <i class="fa-solid fa-xmark"></i>
+                            <div id="descricao">
+                                <ul>
+                                    <li><strong>Nome: </strong>Ametista</li>
+                                    <li><strong>Cor: </strong>Tigrada com branco</li>
+                                    <li><strong>Idade: </strong>1 ano</li>
+                                    <li><strong>Personalidade: </strong>Adora cochilos estratégicos em pontos de luz solar e exige atenção imediata com miados operísticos. É curiosa, mas só se for para investigar algo que valha a pena. No fundo, é uma fofa que derrete por um carinho no queixo, desde que ninguém a force a isso.</li>
+                                </ul>
+                            </div>
+                            <div id="tags">
+                                <ul>
+                                    <li>Vacinada</li>
+                                    <li>Castrada</li>
+                                    <li>Dócil</li>
+                                </ul>
                             </div>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="swiper-slide">
-                    <figure>
+                    <figure id="figure-match">
                         <img src="img/gatos-adocao/gata-aurora.jpg" alt="Gata Tricolor">
                         <figcaption>
                             <ul>
@@ -51,15 +57,11 @@
                                 <li>Idade:</li>
                                 <li>Personalidade:</li>
                             </ul>
-                            <div>
-                                <i class="fa-solid fa-heart"></i>
-                                <i class="fa-solid fa-xmark"></i>
-                            </div>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="swiper-slide">
-                    <figure>
+                    <figure id="figure-match">
                         <img src="img/gatos-adocao/gata-jasmin.jpg" alt="Gata Tricolor predominantemente Cinza com Branco">
                         <figcaption>
                             <ul>
@@ -68,15 +70,11 @@
                                 <li>Idade:</li>
                                 <li>Personalidade:</li>
                             </ul>
-                            <div>
-                                <i class="fa-solid fa-heart"></i>
-                                <i class="fa-solid fa-xmark"></i>
-                            </div>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="swiper-slide">
-                    <figure>
+                    <figure id="figure-match">
                         <img src="img/gatos-adocao/gato-fantasma-da-opera.jpg" alt="Gato Frajola">
                         <figcaption>
                             <ul>
@@ -85,15 +83,11 @@
                                 <li>Idade:</li>
                                 <li>Personalidade:</li>
                             </ul>
-                            <div>
-                                <i class="fa-solid fa-heart"></i>
-                                <i class="fa-solid fa-xmark"></i>
-                            </div>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="swiper-slide">
-                    <figure>
+                    <figure id="figure-match">
                         <img src="img/gatos-adocao/gato-tigrinho.jpg" alt="Gato Tigrado">
                         <figcaption>
                             <ul>
@@ -102,15 +96,11 @@
                                 <li>Idade:</li>
                                 <li>Personalidade:</li>
                             </ul>
-                            <div>
-                                <i class="fa-solid fa-heart"></i>
-                                <i class="fa-solid fa-xmark"></i>
-                            </div>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="swiper-slide">
-                    <figure>
+                    <figure id="figure-match">
                         <img src="img/gatos-adocao/gato-yoda.jpg" alt="Gato Laranja com Branco">
                         <figcaption>
                             <ul>
@@ -119,24 +109,15 @@
                                 <li>Idade:</li>
                                 <li>Personalidade:</li>
                             </ul>
-                            <div>
-                                <i class="fa-solid fa-heart"></i>
-                                <i class="fa-solid fa-xmark"></i>
-                            </div>
                         </figcaption>
                     </figure>
                 </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <div id="acoes">
+                <i class="fa-solid fa-heart" id="coracao"></i>
+                <i class="fa-solid fa-xmark" id="xmark"></i>
             </div>
+        </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

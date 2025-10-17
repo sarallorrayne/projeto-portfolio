@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('landing/hero-section.css');
 @import url('match/match.css');
+@import url('deu-match/deu-match.css');
+@import url('formulario.css');
 
 :root {
     --background-hero-section: linear-gradient(to right, #B3541E,#FF6B35, #f17633, #FF6B35, #B3541E);
     --background-botao: linear-gradient(-35deg, #0A3D62, #0F3D3E);
     --fonte-principal: "Raleway", sans-serif;
     --cor-fonte-principal: #0A3D62;
-    --sombreado: 20px 0 40px rgba(69, 69, 69, 0.5);
+    --sombreado: 20px 0 40px rgba(55, 55, 55, 0.5);
 }
 
 html, body {

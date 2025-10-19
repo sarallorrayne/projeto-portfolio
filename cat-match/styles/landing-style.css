@@ -1,5 +1,5 @@
 #hero-section {
-    background: var(--background-hero-section);
+    background: var(--background-principal);
     height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@
 }
 
 .hero-section-conteudo {
-    color: var(--cor-fonte-principal);
+    color: var(--cor-titulo);
     font-size: 1.5rem;
 
     padding-right: 2rem;
@@ -25,13 +25,13 @@
 
 .hero-section-conteudo a {
     background-image: var(--background-botao);
-    border-radius: 35% 1%;
+    border-radius: 50px 5px;
     box-shadow: var(--sombreado);
 
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-titulo);
     font-size: 1.5rem;
     text-decoration: none;
-    color: #F5E9DA;
+    color: #7A6767;
 
     margin-top: 2rem;
     padding: 1.5rem;
@@ -46,7 +46,7 @@
     width: 30%;
     min-width: 170px;
 
-    background-color: #0A3D62;
+    background-color: #F4C2C2;
     padding: 1%;
     margin: 0;
     border-radius: 50%;

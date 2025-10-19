@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v7.1.0/css/all.css">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/formulario.css">
     <title>CatMatch - Adote um Gatinho</title>
 </head>
 <body>
     <header>
         <nav id="logo">
-            <a href="#">
+            <a href="landing.html">
                 <img src="img/cat-match-logo.png" alt="Logo CatMatch">
             </a>
             <!-- <div>
@@ -22,90 +23,138 @@
     </header>
 
     <main>
-        <section>
+        <section id="hero-section-formulario">
             <h1>Quer dar um lar cheio de amor para seu novo amigo?
                 <br>
                 Conte um pouquinho sobre você!
             </h1>
         </section>
         <form action="">
-            <h2>Informações Pessoais</h2>
-            <div>
-                <label for="nome">Qual o seu nome completo?</label>
-                <input type="text" name="nome" id="nome">
-            </div>
-            <div>
-                <label for="email">Como podemos entrar em contato?</label>
-                <input type="email" name="email" id="email" placeholder="E-mail">
-            <!-- </div>
-            <div> -->
-                <label for="telefone"></label>
-                <input type="tel" name="telefone" id="telefone" placeholder="Telefone">
-            </div>
-            <div>
-                <label for="cidade">Onde você mora?</label>
-                <input type="text" name="cidade" id="cidade">
-            </div>
+            <section id="section-formulario">
+                    <section id="passo1">
+                    <h2>Informações Pessoais</h2>
+                        <div class="div-formulario">
+                            <label for="nome">Qual o seu nome completo?</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <div class="div-formulario">
+                            <label for="email">Como podemos entrar em contato?</label>
+                            <input type="email" name="email" id="email" placeholder="E-mail">
+                            <label for="telefone"></label>
+                            <input type="tel" name="telefone" id="telefone" placeholder="Telefone">
+                        </div>
+                        <div class="div-formulario">
+                            <label for="cidade">Onde você mora?</label>
+                            <input type="text" name="cidade" id="cidade" placeholder="Cidade/UF">
+                            <button type="button" onclick="proximaPagina()" class="botao-pagina">Próximo</button>
+                        </section>
+                        </div>
 
-            <h2>Ambiente e Rotina</h2>
-            <div>
-                <label for="moradia">Você mora em casa ou apartamento</label>
-                <input type="radio" name="moradia" id="moradia" value="casa">Casa
-                <input type="radio" name="moradia" id="moradia" value="apartamento">Apartamento
-            </div>
-            <div>
-                <label for="protecao">O ambiente é telado/protegido?</label>
-                <input type="radio" name="protecao" id="protecao" value="sim">Sim
-                <input type="radio" name="protecao" id="protecao" value="nao">Não
-            </div>
-            <div>
-                <label for="animais">Tem outros animais?</label>
-                <input type="radio" name="animais" id="animais" value="sim">Sim
-                <input type="radio" name="animais" id="animais" value="nao">Não
-            </div>
-            <div>
-                <label for="animais-tipo">Se sim, quais?</label>
-                <input type="text" name="animais-tipo" id="animais-tipo">
-            </div>
-            
-            <h2>Intenção e Compromisso</h2>
-            <p>Não se preocupe, não existem respostas certas. Queremos apenas conhecer você e garantir o melhor match!</p>
-            <div>
-                <label for="intencao">Por que você quer adotar esse gatinho?</label>
-                <input type="text" name="intencao" id="intencao">
-            </div>
-            <div>
-                <label for="cuidados">Como pretende cuidar dele?</label>
-                <input type="text" name="cuidados" id="cuidados">
-            </div>
-            <div>
-                <label for="teve-animais">Você já teve gatos antes?</label>
-                <input type="radio" name="teve-animais" id="teve-animais" value="sim">Sim
-                <input type="radio" name="teve-animais" id="teve-animais" value="nao">Não
-            </div>
+                    <section id="passo2">
+                    <h2>Ambiente e Rotina</h2>
+                        <div class="div-formulario-escolha">
+                            <label for="moradia">Você mora em casa ou apartamento</label>
+                            <select name="moradia" id="moradia">
+                                <option value="" class="alternativas" disabled selected>Selecione uma opção</option >
+                                <option value="casa" class="alternativas">Moro em casa.</option>
+                                <option value="apartamento" class="alternativas">Moro em apartamento.</option>
+                            </select>
+                        </div>
+                        <div class="div-formulario-escolha">
+                            <label for="protecao">O ambiente é telado/protegido?</label>
+                            <select name="protecao" id="protecao">
+                                <option value="" class="alternativas" disabled selected>Selecione uma opção</option >
+                                <option value="sim" class="alternativas">Sim, tenho o ambiente protegido.</option>
+                                <option value="ainda-nao" class="alternativas">Ainda não, mas irei proteger o ambiente para meu novo amigo.</option>
+                                <option value="nao" class="alternativas">Não, o ambiente não é protegido.</option>
+                            </select>
+                        </div>
+                        <div class="div-formulario-escolha">
+                            <label for="animais">Tem outros animais?</label>
+                            <select name="animais" id="animais">
+                                <option value="" class="alternativas" disabled selected>Selecione uma opção</option >
+                                <option value="sim" class="alternativas">Sim, tenho outros pets.</option>
+                                <option value="nao" class="alternativas">Não, não tenho outros pets.</option>
+                            </select>
+                        </div>
+                        <div class="div-formulario">
+                            <label for="animais-tipo">Se sim, qual(is)?</label>
+                            <input type="text" name="animais-tipo" id="animais-tipo">
+                        </div>
+                        <section class="conjunto-botoes">
+                            <button type="button" onclick="paginaAnterior()" class="botao-pagina">Voltar</button>
+                            <button type="button" onclick="proximaPagina()" class="botao-pagina">Próximo</button>
+                        </section>
+                    </section>
 
-            <h2>Como descreveria seu estilo de vida?</h2>
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">Calmo e caseiro 😺</div>
-                    <div class="swiper-slide">Ativo e brincalhão 🐾</div>
-                    <div class="swiper-slide">Um pouco dos dois 💤</div>
-                </div>
-                </div>
+                    <section id="passo3">
+                        <h2>Intenção e Compromisso</h2>
+                        <p>Não se preocupe, não existem respostas certas. Queremos apenas conhecer você e garantir o melhor match!</p>
+                        <div class="div-formulario">
+                            <label for="intencao">Por que você quer adotar esse gatinho?</label>
+                            <input type="text" name="intencao" id="intencao">
+                        </div>
+                        <div class="div-formulario">
+                            <label for="cuidados">Como pretende cuidar dele?</label>
+                            <input type="text" name="cuidados" id="cuidados">
+                        </div>
+                        <div class="div-formulario-escolha">
+                            <label for="teve-animais">Você já teve gatos antes?</label>
+                            <select name="teve-animais" id="teve-animais">
+                                <option value="" class="alternativas" disabled selected>Selecione uma opção</option >
+                                <option value="sim" class="alternativas">Sim, já tive / tenho gato(s).</option>
+                                <option value="nao" class="alternativas">Não, nunca tive um gatinho.</option>
+                            </select>
+                        </div>
+                        <section class="conjunto-botoes">
+                            <button type="button" onclick="paginaAnterior()" class="botao-pagina">Voltar</button>
+                            <button type="button" onclick="proximaPagina()" class="botao-pagina">Próximo</button>
+                        </section>
+                    </section>
 
-                <button>Enviar meu Match 💌</button>
+                    <section id="passo4">
+                        <h2><label for="estilo-vida">Como descreveria seu estilo de vida?</label></h2>
+                        <section class="opcoes-estilo-vida">
+                            <div class="cards-estilo-vida">
+                                <input type="radio" name="estilo-vida" id="calmo" value="calmo">Calmo e caseiro 😺
+                                <label for="calmo" class="opcao-estilo-vida">
+                                    <img src="img/formulario/calmo.png" alt="">
+                                </label>
+                            </div>
+                            <div class="cards-estilo-vida">
+                                <input type="radio" name="estilo-vida" id="ativo" value="ativo">Ativo e brincalhão 🐾
+                                <label for="ativo" class="opcao-estilo-vida">
+                                    <img src="img/formulario/ativo.png" alt="">
+                                </label>
+                            </div>
+                            <div class="cards-estilo-vida">
+                                <input type="radio" name="estilo-vida" id="ambos" value="ambos">Um pouco dos dois 💤
+                                <label for="ambos" class="opcao-estilo-vida">
+                                    <img src="img/formulario/os-dois.png" alt="">
+                                </label>
+                            </div>
+                        </section>
+                        <section class="conjunto-botoes">
+                            <button type="button" onclick="paginaAnterior()" class="botao-pagina">Voltar</button>
+                            <button type="button" onclick="enviarMatch()" class="botao-pagina">Enviar meu Match 💌</button>
+                        </section>
+                    </section>
+                </section>
         </form>
 
-        <div>
-            <p>Miau! 🐱 Seu formulário foi enviado com sucesso.
-                <br>
-            Nossa equipe vai entrar em contato para continuar esse match de amor!</p>
-        </div>
+        <section id="confirmacao">
+            <p>Miau! 🐱</p>
+            <p>Seu formulário foi enviado com sucesso.</p>
+            <p>Nossa equipe vai entrar em contato para continuar esse match de amor!</p>
+        </section>
     </main>
+
+    <footer>
+        <p>Projeto feito por <a href="https://www.linkedin.com/in/souza-sara/" target="_blank">Sara Souza</a></p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="swiper-formulario.js"></script>
+    <script src="proximo-passo.js"></script>
 </body>
 </html>

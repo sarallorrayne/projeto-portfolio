@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('landing/hero-section.css');
-@import url('match/match.css');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('landing-style.css');
+@import url('match-style.css');
 @import url('deu-match/deu-match.css');
-@import url('formulario.css');
 
 :root {
-    --background-hero-section: linear-gradient(to right, #B3541E,#FF6B35, #f17633, #FF6B35, #B3541E);
-    --background-botao: linear-gradient(-35deg, #0A3D62, #0F3D3E);
-    --fonte-principal: "Raleway", sans-serif;
-    --cor-fonte-principal: #0A3D62;
+    --background-header: linear-gradient(to bottom, #fdfbee, #fdfbee, #fdf9e0);
+    --background-principal: linear-gradient(to right, #85AFD4, #A7C7E7, #DCE9F7, #A7C7E7, #85AFD4);
+    --background-botao: linear-gradient(135deg, #F0A8A8, #FADADD, #F4C2C2, #F0A8A8);
+    --background-hero-section: linear-gradient(-deg, #F0A8A8, #F4C2C2, #FADADD);
+    --fonte-titulo: 'Quicksand', sans-serif;
+    --fonte-texto: 'Nunito', sans-serif;
+    --cor-titulo: #4B4B4B;
+    --cor-especial: #7A6767;
+    --cor-texto: #4B4B4B;
     --sombreado: 20px 0 40px rgba(55, 55, 55, 0.5);
 }
 
@@ -19,12 +23,8 @@ html, body {
     box-sizing: border-box;
 }
 
-#main-landing {
-    overflow: hidden;
-}
-
 h1 {
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-titulo);
 }
 
 header {
@@ -32,9 +32,29 @@ header {
     display: flex;
     align-items: center;
     padding: 0 2rem;
-    background-color: #F5E9DA;
+    background-image: var(--background-header);
+    color: #4B4B4B;
 }
 
 #logo img {
     width: 30%;
+}
+
+footer {
+    font-family: var(--fonte-texto);
+    font-size: 0.7rem;
+    color: var(--cor-texto);
+
+    opacity: 0.5;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F0A8A8;
+    opacity: 1 !important;
 }

@@ -1,6 +1,6 @@
 #hero-section-formulario {
     color: var(--cor-titulo);
-    background-color: #F4C2C2;
+    background-color: var(--background-header);
     border-radius: 0 0 50% 50%;
 
     display: flex;
@@ -53,7 +53,7 @@ select {
     display: flex;
     padding: .9rem;
     border-radius: 10px;
-    border: 1px solid #F0A8A8;
+    border: 1px solid #6584a0;
     color: var(--cor-select);
 }
 
@@ -65,7 +65,7 @@ input {
     margin-top: 0.5rem;
 
     border-radius: 10px;
-    border: 1px solid #F0A8A8;
+    border: 1px solid #6584a0;
 }
 
 label {
@@ -82,7 +82,7 @@ label {
     margin: 2rem auto 0;
     padding: .8rem;
 
-    background-image: var(--background-principal);
+    background-color: var(--background-botao);
     border: 1px solid #85AFD4;
     border-radius: 50px 5px;
     box-shadow: var(--sombreado);
@@ -100,9 +100,9 @@ label {
     gap: .5rem;
 
     padding: 1rem 5rem 2rem 5rem;
-    background-color: #F4C2C2;
+    background-color: var(--background-cards);
     border-radius: 80px 10px;
-    border: 2px solid #F0A8A8;
+    border: 2px solid var(--cor-texto);
     box-shadow: 20px 20px 40px rgba(46, 46, 46, 0.5);
 }
 
@@ -162,17 +162,44 @@ h2 {
 }
 
 #confirmacao {
+    font-family: var(--fonte-titulo) ;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--cor-titulo);
+    background-color: var(--background-header);
+    border-radius: 0 0 50% 50%;
+
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     text-align: center;
     padding: 3rem;
-    font-size: 1.5rem;
 }
 
-#confirmacao p {
-    font-family: var(--fonte-texto);
-    color: var(--cor-texto);
-    padding: .2rem;
+.paragrafos-confirmacao {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+#confirmacao .botao {
+    background-color: #d0eef8;
+    border-radius: 50px 5px;
+    box-shadow: var(--sombreado);
+
+    font-family: var(--fonte-texto);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--cor-texto);
+
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+
+#confirmacao .botao:hover {
+    background-color: #00253C;
+    color: #EAF6FA;
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
 }

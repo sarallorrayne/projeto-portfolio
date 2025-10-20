@@ -12,120 +12,44 @@
 <body>
     <header id="header-match">
         <nav id="logo">
-            <a href="landing.html">
+            <a href="landing.html" class="ancora-logo">
                 <img src="img/cat-match-logo.png" alt="Logo CatMatch">
             </a>
+            <a href="landing.html" class="botao-home">Home</a>
         </nav>
     </header>
 
     <main id="main-match">
-        <section id="hero-section-match">
-            <!-- <img src="img/gato-hero-section.jpg" alt=""> -->
-            <h1>O amor está a um miado de distância <i class="fa-duotone fa-solid fa-cat"></i></h1>
-        </section>
-        <section id="manifesto-match">
-            <p>Encontre o gatinho que vai encher seus dias de carinho e ronronar com você nas tardes de preguiça.</p>
-            <p>Favorite seu novo melhor amigo.</p>
-        </section>
-        <div class="swiper">
-            <section id="conheca-nossos-gatinhos">
-                <h2>Conheça nossos gatinhos</h2>
+        <section id="primeira-parte">
+            <section id="hero-section-match">
+                <!-- <img src="img/gato-hero-section.jpg" alt=""> -->
+                <h1>O amor está a um miado de distância <i class="fa-duotone fa-solid fa-cat"></i></h1>
             </section>
-            <div class="swiper-wrapper"></div>
-            <!-- <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <figure id="figure-match">
-                        <img src="img/gata-ametista.jpg" alt="Gata Tigrada com Branco">
-                        <figcaption>
-                            <div id="descricao">
-                                <ul>
-                                    <li><strong>Nome: </strong>Ametista</li>
-                                    <li><strong>Cor: </strong>Tigrada com branco</li>
-                                    <li><strong>Idade: </strong>1 ano</li>
-                                    <li><strong>Personalidade: </strong>Adora cochilos estratégicos em pontos de luz solar e exige atenção imediata com miados operísticos. É curiosa, mas só se for para investigar algo que valha a pena. No fundo, é uma fofa que derrete por um carinho no queixo, desde que ninguém a force a isso.</li>
-                                </ul>
-                            </div>
-                            <div id="tags">
-                                <ul>
-                                    <li>Vacinada</li>
-                                    <li>Castrada</li>
-                                    <li>Dócil</li>
-                                </ul>
-                            </div>
-                        </figcaption>
-                    </figure>
+            <section id="manifesto-match">
+                <p>Encontre o gatinho que vai encher seus dias de carinho e ronronar com você nas tardes de preguiça.</p>
+                <p>Favorite seu novo melhor amigo.</p>
+            </section>
+            <div class="swiper">
+                <section id="conheca-nossos-gatinhos">
+                    <h2>Conheça nossos gatinhos</h2>
+                </section>
+                <div class="swiper-wrapper"></div>
+                
+                <div id="acoes">
+                    <i class="fa-solid fa-heart" id="coracao"></i>
+                    <i class="fa-solid fa-xmark" id="xmark"></i>
                 </div>
-                <div class="swiper-slide">
-                    <figure id="figure-match">
-                        <img src="img/gatos-adocao/gata-aurora.jpg" alt="Gata Tricolor">
-                        <figcaption>
-                            <ul>
-                                <li>Nome:</li>
-                                <li>Cor:</li>
-                                <li>Idade:</li>
-                                <li>Personalidade:</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="swiper-slide">
-                    <figure id="figure-match">
-                        <img src="img/gatos-adocao/gata-jasmin.jpg" alt="Gata Tricolor predominantemente Cinza com Branco">
-                        <figcaption>
-                            <ul>
-                                <li>Nome:</li>
-                                <li>Cor:</li>
-                                <li>Idade:</li>
-                                <li>Personalidade:</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="swiper-slide">
-                    <figure id="figure-match">
-                        <img src="img/gatos-adocao/gato-fantasma-da-opera.jpg" alt="Gato Frajola">
-                        <figcaption>
-                            <ul>
-                                <li>Nome:</li>
-                                <li>Cor:</li>
-                                <li>Idade:</li>
-                                <li>Personalidade:</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="swiper-slide">
-                    <figure id="figure-match">
-                        <img src="img/gatos-adocao/gato-tigrinho.jpg" alt="Gato Tigrado">
-                        <figcaption>
-                            <ul>
-                                <li>Nome:</li>
-                                <li>Cor:</li>
-                                <li>Idade:</li>
-                                <li>Personalidade:</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="swiper-slide">
-                    <figure id="figure-match">
-                        <img src="img/gatos-adocao/gato-yoda.jpg" alt="Gato Laranja com Branco">
-                        <figcaption>
-                            <ul>
-                                <li>Nome:</li>
-                                <li>Cor:</li>
-                                <li>Idade:</li>
-                                <li>Personalidade:</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div> -->
-            <div id="acoes">
-                <i class="fa-solid fa-heart" id="coracao"></i>
-                <i class="fa-solid fa-xmark" id="xmark"></i>
             </div>
-        </div>
+        </section>
+
+        <section id="deu-match">
+            <figure id="figure-deu-match">
+                <button id="fechar-match" class="botao-fechar"><i class="fa-solid fa-xmark"></i></button>
+                <figcaption id="caption-deu-match">Vocês deram match! Ele quer saber mais sobre você!</figcaption>
+                <img src="img/gata-ametista.jpg" alt="Gato escolhido" id="img-gato"/>
+                <a href="formulario-adocao.html" class="botao">Iniciar Adoção</a>
+            </figure>
+        </section>
     </main>
 
     <footer>
@@ -133,7 +57,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="gatos.js"></script>
-    <script src="swiper.js"></script>
+    <script src="scripts/gatos.js"></script>
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/match.js"></script>
 </body>
 </html>

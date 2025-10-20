@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('landing-style.css');
 @import url('match-style.css');
-@import url('deu-match/deu-match.css');
+@import url('deu-match.css');
 
 :root {
-    --background-header: linear-gradient(to bottom, #fdfbee, #fdfbee, #fdf9e0);
-    --background-principal: linear-gradient(to right, #85AFD4, #A7C7E7, #DCE9F7, #A7C7E7, #85AFD4);
-    --background-botao: linear-gradient(135deg, #F0A8A8, #FADADD, #F4C2C2, #F0A8A8);
-    --background-hero-section: linear-gradient(-deg, #F0A8A8, #F4C2C2, #FADADD);
-    --fonte-titulo: 'Quicksand', sans-serif;
+    --background-header: #85AFD4;
+    --background-principal: #EAF6FA;
+    --background-cards: #a4c4df;
+    --background-botao: #85AFD4;
+    --fonte-titulo: 'Raleway', sans-serif;
     --fonte-texto: 'Nunito', sans-serif;
-    --cor-titulo: #4B4B4B;
-    --cor-especial: #7A6767;
-    --cor-texto: #4B4B4B;
+    --cor-titulo: #00253C;
+    --cor-texto: #00253C;
+    --cor-select: #8A8A8A;
     --sombreado: 20px 0 40px rgba(55, 55, 55, 0.5);
 }
 
@@ -21,6 +21,16 @@ html, body {
     padding: 0;
     height: 100%;
     box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 h1 {
@@ -32,12 +42,53 @@ header {
     display: flex;
     align-items: center;
     padding: 0 2rem;
-    background-image: var(--background-header);
+    background-color: var(--background-header);
     color: #4B4B4B;
+}
+
+#logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.botao-home {
+    color: var(--cor-titulo);
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.botao-home:hover {
+    background-color: var(--background-cards);
+    color: var(--cor-texto);
 }
 
 #logo img {
     width: 30%;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+button:hover,
+a:hover:not(.ancora-logo) {
+    background-color: #00253C;
+    color: #EAF6FA;
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #00253C;
 }
 
 footer {
@@ -50,7 +101,7 @@ footer {
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 footer a {

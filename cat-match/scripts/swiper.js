@@ -1,10 +1,12 @@
-// swiper.js
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Swiper.js carregado'); // Debug: Verifique se o script roda
+    console.log('Swiper.js carregado');
 
     const swiperWrapper = document.querySelector('.swiper-wrapper');
     const coracao = document.getElementById('coracao');
     const xmark = document.getElementById('xmark');
+    const deuMatch = document.getElementById('deu-match');
+    const primeiraParte = document.getElementById('primeira-parte');
+    const fecharMatch = document.getElementById('fechar-match');
 
     if (!swiperWrapper) {
         console.error('Erro: .swiper-wrapper não encontrado no DOM');
@@ -16,9 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    console.log('Gatos carregados:', window.gatos); // Debug: Verifique os dados
+    console.log('Gatos carregados:', window.gatos); 
 
-    // Gera os slides dinamicamente
     window.gatos.forEach((gato, index) => {
         const slide = document.createElement('div');
         slide.className = 'swiper-slide';
@@ -43,10 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
             </figure>
         `;
         swiperWrapper.appendChild(slide);
-        console.log(`Slide ${index} criado para ${gato.nome}`); // Debug
+        console.log(`Slide ${index} criado para ${gato.nome}`); 
     });
 
-    // Inicializa o Swiper
     const swiper = new Swiper('.swiper', {
         loop: true,
         navigation: {
@@ -59,19 +59,30 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 
-    console.log('Swiper inicializado'); // Debug
+    console.log('Swiper inicializado');
 
-    // Lida com o clique no coração
     coracao.addEventListener('click', () => {
-        const activeSlideIndex = swiper.activeIndex % window.gatos.length;
+        const activeSlideIndex = swiper.realIndex;
         const gatoEscolhido = window.gatos[activeSlideIndex];
         localStorage.setItem('gatoEscolhido', JSON.stringify(gatoEscolhido));
-        console.log('Gato escolhido:', gatoEscolhido); // Debug
-        window.location.href = 'deu-match.html';
-    });
+        console.log('Gato escolhido:', gatoEscolhido);
+        deuMatch.style.display = "flex";
 
-    // Lida com o clique no X
+        const imgGato = document.getElementById('img-gato');
+        const captionMatch = document.getElementById('caption-deu-match');
+        imgGato.src = gatoEscolhido.imagem;
+        imgGato.alt = `Gato escolhido: ${gatoEscolhido.nome}`;
+        captionMatch.textContent = `Vocês deram match! ${gatoEscolhido.nome} quer saber mais sobre você!`;
+        });
+
     xmark.addEventListener('click', () => {
         swiper.slideNext();
     });
+
+    fecharMatch.addEventListener('click', () => {
+        console.log('Fechando modal');
+        deuMatch.style.display = "none";
+        primeiraParte.style.display = "block";
+    });
+
 });

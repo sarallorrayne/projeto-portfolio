@@ -4,8 +4,8 @@ body, html {
 }
 
 #hero-section-match {
-    background-color: #F4C2C2;
-    color: var(--cor-titulo);
+    background-color: var(--background-botao);
+    color: var(--cor-texto);
     font-size: 1.7rem;
 
     padding: 5rem;
@@ -61,9 +61,9 @@ body, html {
 
     max-width: 80vw;
 
-    background-color: #F4C2C2;
+    background-color: var(--background-cards);
     border-radius: 80px 10px;
-    border: 2px solid #F0A8A8;
+    border: 2px solid #6584a0;
     box-shadow: 20px 20px 40px rgba(46, 46, 46, 0.5);
     
 }
@@ -107,7 +107,6 @@ figcaption {
 }
 
 #descricao {
-    /* max-height: 50vh; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -149,12 +148,8 @@ figcaption {
 
 #acoes i {
     color: #e63946;
-    /* padding: 1.5rem 1rem; */
-
-    background-color: #F4C2C2;
 
     border-radius: 50%;
-    /* border: 2px solid #F0A8A8; */
     text-shadow: 5px 5px 10px rgba(46, 46, 46, 0.5);
 
     display: flex;
@@ -167,7 +162,7 @@ figcaption {
 
 #acoes i:hover {
     transform: scale(1.1);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 @keyframes pulse {
